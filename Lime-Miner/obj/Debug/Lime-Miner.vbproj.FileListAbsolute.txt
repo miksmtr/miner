@@ -8,3 +8,13 @@ C:\Users\win10\source\repos\Lime-Miner\Lime-Miner\obj\Debug\Lime-Miner.vbproj.Ge
 C:\Users\win10\source\repos\Lime-Miner\Lime-Miner\obj\Debug\Lime Miner.exe
 C:\Users\win10\source\repos\Lime-Miner\Lime-Miner\obj\Debug\Lime Miner.xml
 C:\Users\win10\source\repos\Lime-Miner\Lime-Miner\obj\Debug\Lime Miner.pdb
+C:\Users\win10\source\repos\miner\Lime-Miner\bin\Debug\Lime Miner.exe
+C:\Users\win10\source\repos\miner\Lime-Miner\bin\Debug\Lime Miner.pdb
+C:\Users\win10\source\repos\miner\Lime-Miner\bin\Debug\Lime Miner.xml
+C:\Users\win10\source\repos\miner\Lime-Miner\obj\Debug\Lime-Miner.vbprojAssemblyReference.cache
+C:\Users\win10\source\repos\miner\Lime-Miner\obj\Debug\Lime_Miner.Form1.resources
+C:\Users\win10\source\repos\miner\Lime-Miner\obj\Debug\Lime_Miner.Resources.resources
+C:\Users\win10\source\repos\miner\Lime-Miner\obj\Debug\Lime-Miner.vbproj.GenerateResource.cache
+C:\Users\win10\source\repos\miner\Lime-Miner\obj\Debug\Lime Miner.exe
+C:\Users\win10\source\repos\miner\Lime-Miner\obj\Debug\Lime Miner.xml
+C:\Users\win10\source\repos\miner\Lime-Miner\obj\Debug\Lime Miner.pdb
